@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="travel-area.css">
+    <link rel="stylesheet" href="resources/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.css">
+    <title>Document</title>
+    <script>
+        function trip() {
+            alert("찜한 여행이 없습니다");
+        }
+
+        function alert1() {
+            alert("다음페이지가 업습니다.");
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+
+        <div class="header-up">
+            <a href="main.html"><img src="imgs/로고2.png" alt="" class="header-img"></a>
+
+            <div class="header-sub">
+                <div>
+                    <a href="review.html" style="color: black;"><i class="fas fa-pen"></i> 리뷰</a>
+                </div>
+                <button onclick="trip()">
+                    <i class="far fa-heart"></i> 여행</a>
+                </button>
+                <div>
+                    <a href="alert.html" style="color: black;"><i class="far fa-bell"></i> 알림</a>
+                </div>
+                <div id="login">
+                    <a href="login.html" style="color: white;">로그인</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--  -->
+
+    
+    <div id="nav">
+        <a href="travel-area3.html"><button><i class="fas fa-chevron-circle-left"></i></button></a>
+        <div>4</div>
+        <button onclick="alert1()"><i class="fas fa-chevron-circle-right"></i></button>
+    </div>
+
+    <!--  -->
+    
+    <div id="travel-area">
+
+        <img src="imgs/추천4.jpg" alt="" class="travel-img">
+        <div class="travel-info">
+            <div>대한민국 대표 산악인 허영호 대장과 함께 우리나라 최초의 국립공원 지리산을 탐험해 보세요.</div>    
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

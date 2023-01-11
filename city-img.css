@@ -1,0 +1,178 @@
+@media screen and (min-width:480px) {
+    * {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+    
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    /* header */
+    
+    header {
+        width: 80%;
+        z-index: 10;
+        position: absolute;
+        margin-left: 180px;
+    }
+    
+    header i {
+        width: auto;
+        height: auto;
+        padding-top: 3px;
+    }
+    
+    .header-up {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .header-img {
+        width: 300px;
+        margin-top: -60px;
+        align-items: center;
+        display: flex;
+    }
+    
+    
+    
+    
+    /*  */
+    /*  */
+    
+    #main-title {
+        position: absolute;
+        z-index: 3;
+        font-size: 100px;
+        text-align: center;
+        padding-top: 300px;
+        font-weight: bolder;
+        text-shadow: 10px 10px 20px rgb(65, 65, 65);
+        color: rgba(27, 27, 27, 0.9);
+        font-family: 'Otomanopee One', sans-serif;
+    }
+    
+    
+    #main-img {
+        width: 100%;
+        height: 700px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #main-img > div:nth-child(1) {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    #main-img > div:nth-child(2) {
+        display: grid;
+        grid-template-columns: 1fr 1.6fr;
+    }
+    
+    .img {
+        height: 50vh; 
+        object-fit: cover;
+    }
+    
+    /* 서울 */
+}
+
+@media screen and (max-width:480px) {
+    * {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+    
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    /* header */
+    
+    header {
+        width: 80%;
+        z-index: 10;
+        position: absolute;
+        margin-left: 60px;
+    }
+    
+    header i {
+        width: auto;
+        height: auto;
+        padding-top: 3px;
+    }
+    
+    .header-up {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .header-img {
+        width: 200px;
+        margin-top: -60px;
+        align-items: center;
+        display: flex;
+    }
+    
+    
+    
+    
+    /*  */
+    /*  */
+    
+    #main-title {
+        position: absolute;
+        z-index: 3;
+        font-size: 70px;
+        text-align: center;
+        padding-top: 300px;
+        font-weight: bolder;
+        text-shadow: 10px 10px 20px rgb(65, 65, 65);
+        color: rgba(27, 27, 27, 0.9);
+        font-family: 'Otomanopee One', sans-serif;
+    }
+    
+    
+    #main-img {
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    #main-img > div:nth-child(1) {
+        display: grid;
+        grid-template-columns: 1.6fr 1fr;
+    }
+    
+    #main-img > div:nth-child(2) {
+        display: grid;
+        grid-template-columns: 1fr 1.6fr;
+    }
+    
+    .img {
+        height: 50vh; 
+        object-fit: cover;
+    }
+    
+    /* 서울 */
+}

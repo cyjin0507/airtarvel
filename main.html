@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main_style.css">
+    <link rel="stylesheet" href="resources/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.css">
+    
+    <title>에어트레블 AIRTRAVEL</title>
+</head>
+<script src="resources/jquery-3.6.0.min.js"></script>
+<script>
+
+    // 리스트 관련
+    function sec7_1_1() {
+        $("#one").css("display", "block");
+        $("#a-a").css("display", "none");
+        $("#a-b").css("display", "block");
+    }
+
+    function sec7_1_2() {
+        $("#one").css("display", "none");
+        $("#a-a").css("display", "block");
+        $("#a-b").css("display", "none");
+    }
+
+    function sec7_2_1() {
+        $("#two").css("display", "block");
+        $("#b-a").css("display", "none");
+        $("#b-b").css("display", "block");
+    }
+
+    function sec7_2_2() {
+        $("#two").css("display", "none");
+        $("#b-a").css("display", "block");
+        $("#b-b").css("display", "none");
+    }
+
+    function sec7_3_1() {
+        $("#three").css("display", "block");
+        $("#c-a").css("display", "none");
+        $("#c-b").css("display", "block");
+    }
+
+    function sec7_3_2() {
+        $("#three").css("display", "none");
+        $("#c-a").css("display", "block");
+        $("#c-b").css("display", "none");
+    }
+
+    function sec7_4_1() {
+        $("#four").css("display", "block");
+        $("#d-a").css("display", "none");
+        $("#d-b").css("display", "block");
+    }
+
+    function sec7_4_2() {
+        $("#four").css("display", "none");
+        $("#d-a").css("display", "block");
+        $("#d-b").css("display", "none");
+    }
+
+    function sec7_5_1() {
+        $("#five").css("display", "block");
+        $("#e-a").css("display", "none");
+        $("#e-b").css("display", "block");
+    }
+
+    function sec7_5_2() {
+        $("#five").css("display", "none");
+        $("#e-a").css("display", "block");
+        $("#e-b").css("display", "none");
+    }
+
+    
+
+    // 리스트 관련
+
+    //메뉴바
+
+    function menu1() {
+        $("#bar1").css("display","none");
+        $("#bar2").css("display","block");
+        $("#menu-sub").css("display","block")
+    }
+
+    function menu2() {
+        $("#bar1").css("display","block");
+        $("#bar2").css("display","none");
+        $("#menu-sub").css("display","none");
+    }
+
+
+    //메뉴바
+
+    function trip() {
+        alert("찜한 여행이 없습니다");
+    }
+
+    // 더보기
+
+    function more() {
+        $("#more-btn").css("display","none")
+        $("#close-btn").css("display","block")
+        $(".sec1-sub:nth-child(4)").css("display", "block");
+        $(".sec1-sub:nth-child(5)").css("display", "block");
+        $(".sec1-sub:nth-child(6)").css("display", "block");
+        $(".sec1-sub:nth-child(7)").css("display", "block");
+        $(".sec1-sub:nth-child(8)").css("display", "block");
+        $(".sec1-sub:nth-child(9)").css("display", "block");
+    }
+
+    function closeBtn() {
+        $("#more-btn").css("display","block")
+        $("#close-btn").css("display","none")
+        $(".sec1-sub:nth-child(4)").css("display", "none");
+        $(".sec1-sub:nth-child(5)").css("display", "none");
+        $(".sec1-sub:nth-child(6)").css("display", "none");
+        $(".sec1-sub:nth-child(7)").css("display", "none");
+        $(".sec1-sub:nth-child(8)").css("display", "none");
+        $(".sec1-sub:nth-child(9)").css("display", "none");
+    }
+
+    // 메뉴보기
+
+    function lookMenu() {
+        $("#look-btn").css("display", "none");
+        $("#close-menu-btn").css("display", "block");
+        $(".header-main").css("display", "block");
+    }
+
+    function closeMenu() {
+        $("#look-btn").css("display", "block");
+        $("#close-menu-btn").css("display", "none");
+        $(".header-main").css("display", "none");
+    }
+
+
+
+ 
+
+</script>
+
+<body>
+
+
+    <header>
+
+        <div class="header-up">
+            <img src="imgs/로고2.png" alt="" class="header-img">
+
+            <div id="main-menu">
+                <button class="menu-btn" id="look-btn" onclick="lookMenu()"><i class="fas fa-bars"></i></button>
+                <button class="menu-btn" id="close-menu-btn" onclick="closeMenu()"><i class="fas fa-chevron-left"></i></button>
+            </div>
+                
+            <div class="header-sub">
+                <div>
+                    <a href="review.html" style="color: black;"><i class="fas fa-pen"></i> 리뷰</a>
+                </div>
+                <button onclick="trip()">
+                    <i class="far fa-heart"></i> 여행</a>
+                </button>
+                <div>
+                    <a href="alert.html" style="color: black;"><i class="far fa-bell"></i> 알림</a>
+                </div>
+                <div id="login">
+                    <a href="login.html" style="color: white;">로그인</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main">
+
+            <div>
+                <a href="sub.html">
+                    호텔 <i class="fas fa-bed"></i>
+                </a>
+            </div>
+            <div>
+                <a href="travel-area1.html">
+                    즐길거리 <i class="fas fa-ticket-alt"></i>
+                </a>
+            </div>
+            <div>
+                <a href="sub.html">
+                    음식점 <i class="fas fa-utensils"></i>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.koreanair.com/kr/ko">
+                    항공권 <i class="fas fa-plane-departure"></i>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.rentalcars.com/?affiliateCode=google&preflang=ko&label=generic-8paELiPpqcD6jHwTA4saxQS433095123808&ws=&ppc_placement=&ppc_target=&ppc_param1=&ppc_param2=&aceid=&adposition=&ppc_network=g&feeditemid=&ppc_targetid=kwd-3484179040&loc_physical_ms=1009893&loc_interest_ms=&ppc_device=c&ppc_devicemodel=&gclid=CjwKCAjw_o-HBhAsEiwANqYhp0UktV-OktPWD9O15KlFyUOpVa6n74i_EAgHNWG2_hH73vSrl9dexhoCCmYQAvD_BwE">
+                    렌터카 <i class="fas fa-car-alt"></i>
+                </a>
+            </div>
+            <div>
+               <a href="sub.html"> 더보기 <i class="fas fa-ellipsis-h"></i></a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- 픽스드 메뉴바 -->
+
+    <section id="fixed-menubar">
+
+        <div id="menu-bar">
+            <button class="menu-btn" id="bar1" onclick="menu1()"><i class="fas fa-bars"></i></button>
+            <button class="menu-btn" id="bar2" onclick="menu2()"><i class="fas fa-chevron-left"></i></button>
+        </div>
+
+        <div id="menu-sub">
+            <div>
+                <a href=""><i class="fas fa-bed"></i></a>
+                <a href="travel-area1.html"><i class="fas fa-ticket-alt"></i></a>
+                <a href=""><i class="fas fa-utensils"></i></a>
+                <a href="https://www.koreanair.com/kr/ko"><i class="fas fa-plane-departure"></i></a>
+                <a href="https://www.rentalcars.com/?affiliateCode=google&preflang=ko&label=generic-8paELiPpqcD6jHwTA4saxQS433095123808&ws=&ppc_placement=&ppc_target=&ppc_param1=&ppc_param2=&aceid=&adposition=&ppc_network=g&feeditemid=&ppc_targetid=kwd-3484179040&loc_physical_ms=1009893&loc_interest_ms=&ppc_device=c&ppc_devicemodel=&gclid=CjwKCAjw_o-HBhAsEiwANqYhp0UktV-OktPWD9O15KlFyUOpVa6n74i_EAgHNWG2_hH73vSrl9dexhoCCmYQAvD_BwE"><i class="fas fa-car-alt"></i></a>
+                <a href=""><i class="fas fa-ellipsis-h"></i></a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 픽스드 메뉴바 -->
+
+
+    <!-- 비주얼 -->
+
+    <section id="visual">
+
+        <input type="search" id="search" placeholder="어디로 가시나요?   예) 서울">
+
+    </section>
+
+    <!-- 상단 이용 -->
+
+    <div id="top-down">
+        <button class="up" onclick="window.scrollTo(0,0);"><i class="fas fa-chevron-up"></i></button>
+        <button class="down" onclick="window.scrollTo(0,10000);"><i class="fas fa-chevron-down"></i></button>
+    </div>
+
+
+    <!-- 가까운 여행지 알아보기 -->
+
+    <section id="section1">
+
+        <div id="sec1-title">가까운 여행지 둘러보기</div>
+
+        <div id="sec1-main">
+            <div class="sec1-sub">
+                <a href="seoul.html"><img src="imgs/서울.webp" alt="" class="sec1-img"></a>
+                <div class="sec1-txt">서울 <br /> 차로 1시간 거리</div>
+            </div>
+
+            <div class="sec1-sub">
+                <a href="sokcho.html"><img src="imgs/속초.webp" alt="" class="sec1-img"></a>
+                <div class="sec1-txt">속초시 <br /> 차로 3시간 거리</div>
+            </div>
+
+            <div class="sec1-sub">
+                <a href="yangyang.html"><img src="imgs/양양.webp" alt="" class="sec1-img"></a>
+                <div class="sec1-txt">양양군 <br /> 차로 2.5시간 거리</div>
+            </div>
+
+            <button class="more" id="more-btn" onclick="more()">더보기</button>
+
+            <div class="sec1-sub">
+                <a href="wanju.html"><img src="imgs/완주.webp" alt="" class="sec1-img"></a>
+                <div class="sec1-txt">완주군 <br /> 차로 2.5시간 거리</div>
+            </div>
+
+            <div class="sec1-sub">
+                <a href="jeonju.html"><img src="imgs/전주.webp" alt="" class="sec1-img"></a>
+                <div class="sec1-txt">전주시 <br /> 차로 2.5시간 거리</div>
+            </div>
+
+            <div class="sec1-sub">
+                <a href="jeju.html"><img src="imgs/제주.webp" alt="" class="sec1-img"></a>
+                <div class="sec1-txt">제주도 <br /> 차로 7시간 거리</div>
+            </div>
+
+            <div class="sec1-sub">
+                <a href="goseong.html"><img src="imgs/고성.webp" alt="" class="sec1-img"></a>
+                <div class="sec1-txt">고성군 <br /> 차로 3시간 거리</div>
+            </div>
+
+            <div class="sec1-sub">
+                <a href="busan.html"><img src="imgs/부산.webp" alt="" class="sec1-img"></a>
+                <div class="sec1-txt">부산 <br /> 차로 4.5시간 거리</div>
+            </div>
+
+            <button class="more" id="close-btn" onclick="closeBtn()">닫기</button>
+
+        </div>
+
+    </section>
+
+    <!-- 가까운 여행지 알아보기 -->
+
+
+    <!-- 어디에서나, 여행은 살아보는 거야 -->
+
+    <section id="section2">
+
+        <div id="sec2-title">어디에서나, 여행은 살아보는 거야!</div>
+
+        <div id="sec2-main">
+            <div class="sec2-sub">
+                <div class="overflow"><a href="nature.html"><img src="imgs/sec2-img1.webp" alt="" class="sec2-img"></a></div>
+                <div class="sec2-txt">자연생활을 만끽할 수 있는 숙소</div>
+            </div>
+
+            <div class="sec2-sub">
+                <div class="overflow"><a href="unique.html"><img src="imgs/sec2-img2.webp" alt="" class="sec2-img"></a></div>
+                
+                <div class="sec2-txt">독특한 공간</div>
+            </div>
+
+            <div class="sec2-sub">
+                <div class="overflow"><a href="houseAll.html"><img src="imgs/sec2-img3.webp" alt="" class="sec2-img"></a></div>
+                <div class="sec2-txt">집 전체</div>
+            </div>
+
+            <div class="sec2-sub">
+                <div class="overflow"><a href="pet.html"><img src="imgs/sec2-img4.webp" alt="" class="sec2-img"></a></div>
+                <div class="sec2-txt">반려동물 가능</div>
+            </div>
+        </div>
+
+      
+
+    </section>
+
+    <!-- 어디에서나, 여행은 살아보는 거야 -->
+
+    <!-- 호텔 및 기타 숙박 시설 -->
+
+    <section id="section3">
+
+        <div id="sec3-title">호텔 및 숙박 시설</div>
+
+
+        <div id="sec3-main">
+            <div class="sec3-sub">
+                <a href="sub.html"><img src="imgs/리조트.jpg" alt="" class="sec3-img"></a>
+                <div class="sec3-txt">리조트</div>
+            </div>
+
+            <div class="sec3-sub">
+                <a href="sub.html"><img src="imgs/아파트.jpg" alt="" class="sec3-img"></a>
+                <div class="sec3-txt">아파트</div>
+            </div>
+
+            <div class="sec3-sub">
+                <a href="sub.html"><img src="imgs/호텔.jpg" alt="" class="sec3-img"></a>
+                <div class="sec3-txt">호텔</div>
+            </div>
+
+            <div class="sec3-sub">
+                <a href="sub.html"><img src="imgs/게스트하우스.jpg" alt="" class="sec3-img"></a>
+                <div class="sec3-txt">게스트하우스</div>
+            </div>
+
+            <div class="sec3-sub">
+                <a href="sub.html"><img src="imgs/호스텔.jpg" alt="" class="sec3-img"></a>
+                <div class="sec3-txt">호스텔</div>
+            </div>
+
+            <div class="sec3-sub">
+                <a href="sub.html"><img src="imgs/료칸.jpg" alt="" class="sec3-img"></a>
+                <div class="sec3-txt">료칸</div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- 호텔 및 기타 숙박 시설 -->
+
+    <!-- 안심하고 즐기는 여행 -->
+
+    <section id="section4">
+
+        <div id="sec4-title">
+            <span>안심하고 즐기는 여행</span><br />
+            <span class="sub">많은 숙박 시설에서 강화된 보건 및 안전 조치 관련 정보를 업데이트했습니다. 검색 시 다음과 같은 세부 정보를 확인하실 수 있어요.</span>
+        </div>
+
+        <div id="sec4-main">
+            <div class="sec4-sub">
+                <i class="fas fa-check-circle"></i>
+                <div class="sec4-txt">
+                    <span>공식 버선 표준</span><br />
+                    <span class="detail">숙발 시설에서 법인/조직의 위생 지침 준수</span>
+                </div>
+            </div>
+
+            <div class="sec4-sub">
+                <i class="fas fa-people-arrows"></i>
+                <div class="sec4-txt">
+                    <span>사회적 거리두기</span><br />
+                    <span class="detail">비대면 체크인/체크아웃 및 기타 사회적 거리두기 조치</span>
+                </div>
+            </div>
+
+            <div class="sec4-sub">
+                <i class="fas fa-hand-sparkles"></i>
+                <div class="sec4-txt">
+                    <span>보건 및 위생</span><br />
+                    <span class="detail">소독제 사용 및 고객 투숙 간 공실 기간 적용 여부</span>
+                </div>
+            </div>
+
+            <div class="sec4-sub">
+                <i class="fas fa-pump-medical"></i>
+                <div class="sec4-txt">
+                    <span>숙발 시설 필수품</span><br />
+                    <span class="detail">고객을 위한 무료 손 소독제 및 개별 포장된 음식 옵션</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 안심하고 즐기는 여행 -->
+
+    <!-- 슬기로운 집콕 생활 -->
+
+    <section id="section5">
+
+        <div id="sec5-main">
+            <div id="sec5-txt">
+                <div id="sec5-title">슬기로운 <br /> 집콕생활</div>
+                <div id="sec5-info">코로나 끝나고 갈 여행지를 선택하세요</div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 슬기로운 집콕 생활 -->
+
+    <!-- 여행 추천 -->
+
+    <section id="section6">
+
+        <div id="sec6-title">대한민국 여행지 추천</div>
+
+        <div id="sec6-main">
+
+            <div class="sec6-sub" id="sec6-1">
+                <div class="sec6-txt">
+                    <div class="sec6-sub-title">[마을여행] 목포에서 펼쳐지는 멋진 세계 '마노의 부엌'</div>
+                    <div class="price"><i class="fas fa-won-sign"></i>60,000 <span>1인</span></div>
+                    <div class="sec6-info">
+                        <div class="date">2021년 7월 04일 ~ 계속</div>
+                        <div class="info-under">
+                            <div>남도에서만 만날 수 있는 특별한 이야기와 재료로 준비된 '마노의 비밀부엌' 1박2일</div>
+                            <a href="travel-area1.html">
+                                <button class="sec6-btn">
+                                    <span>자세히 보기</span>
+                                    <span class="go"><i class="fas fa-chevron-right"></i></span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec6-sub" id="sec6-2">
+                <div class="sec6-txt">
+                    <div class="sec6-sub-title">[경주 한옥스테이] 300년 역사의 숨결이 서린 경주 최</div>
+                    <div class="price"><i class="fas fa-won-sign"></i>600,000 <span>1인</span></div>
+                    <div class="sec6-info">
+                        <div class="date">2021년 7월 09일 ~ 계속</div>
+                        <div class="info-under">
+                            <div>전통 한옥 양식을 그대로 품고 있는, 300년된 신라의 오랜 이야기를 나누어보아요.</div>
+                            <a href="travel-area2.html">
+                                <button class="sec6-btn">
+                                    <span>자세히 보기</span>
+                                    <span class="go"><i class="fas fa-chevron-right"></i></span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec6-sub" id="sec6-3">
+                <div class="sec6-txt" id="spe1">
+                    <div class="sec6-sub-title">[상시 출발] 2박3일 제주도 맞춤여행</div>
+                    <div class="price"><i class="fas fa-won-sign"></i>145,000 <span>1인</span></div>
+                    <div class="sec6-info">
+                        <div class="date">2021년 7월 04일 ~ 계속</div>
+                        <div class="info-under">
+                            <div>일상생활에 벗어나 여행의 즐거움과 감동을 나누는 느낌의 시간 행복한 추억을 만드는 여행</div>
+                            <a href="travel-area3.html">
+                                <button class="sec6-btn">
+                                    <span>자세히 보기</span>
+                                    <span class="go"><i class="fas fa-chevron-right"></i></span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec6-sub" id="sec6-4">
+                <div class="sec6-txt" id="spe2">
+                    <div class="sec6-sub-title">[저탄소여행]지리산 생태탐방 트레킹 with 허영호</div>
+                    <div class="price"><i class="fas fa-won-sign"></i>230,000 <span>1인</span></div>
+                    <div class="sec6-info">
+                        <div class="date">2021년 7월 18일 ~ 계속</div>
+                        <div class="info-under">
+                            <div>대한민국 대표 산악인 허영호 대장과 함께 우리나라 최초의 국립공원 지리산을 탐험해 보세요.</div>
+                            <a href="travel-area4.html">
+                                <button class="sec6-btn">
+                                    <span>자세히 보기</span>
+                                    <span class="go"><i class="fas fa-chevron-right"></i></span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 여행 추천 -->
+
+
+    <!-- 리스트 -->
+
+    <section id="section7">
+
+        <div id="sec7-main">
+
+            <div class="sec7-sub">
+                <div class="sec7-btn">
+                    <button class="sec7-title1" id="a-a" onclick="sec7_1_1()">
+                        <div><i class="fas fa-chevron-down"></i> 인기 목적지</div>
+                    </button>
+                    <button class="sec7-title2" id="a-b" onclick="sec7_1_2()">
+                        <div><i class="fas fa-chevron-up"></i> 인기 목적지</div>
+                    </button>
+                </div>
+                <div class="sec7-info" id="one">
+
+                    <div>
+                        <a href="sub.html">
+                            <div>서울 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>서귀포 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>부산 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>홍콩 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>방콕 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>세부 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>제주시 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>오키나와 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>여수 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>파리 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>다냥 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>인천 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>오사카 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>런던 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>경주 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>하노이 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>강릉 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>지앙마이 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>도쿄 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>호치민 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>보라카이 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>상하이 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>후쿠오카 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>삿포로 호텔</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec7-sub">
+                <div class="sec7-btn">
+                    <button class="sec7-title1" id="b-a" onclick="sec7_2_1()">
+                        <div><i class="fas fa-chevron-down"></i> 인기 국가 및 지역</div>
+                    </button>
+                    <button class="sec7-title2" id="b-b" onclick="sec7_2_2()">
+                        <div><i class="fas fa-chevron-up"></i> 인기 국가 및 지역</div>
+                    </button>
+                </div>
+                <div class="sec7-info" id="two">
+
+                    <div>
+                        <a href="sub.html">
+                            <div>괌 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>제주도 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>한국 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>강원 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>대만 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>하와이 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>몰디브 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>마우이 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>마카오 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>경기 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>태국 호텔</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>오아후 호텔</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec7-sub">
+                <div class="sec7-btn">
+                    <button class="sec7-title1" id="c-a" onclick="sec7_3_1()">
+                        <div><i class="fas fa-chevron-down"></i> 지원 및 자주 묻는 질문</div>
+                    </button>
+                    <button class="sec7-title2" id="c-b" onclick="sec7_3_2()">
+                        <div><i class="fas fa-chevron-up"></i> 지원 및 자주 묻는 질문</div>
+                    </button>
+                </div>
+                <div class="sec7-info" id="three">
+
+                    <div>
+                        <a href="sub.html">
+                            <div>내 예약 정보</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>사이트에 대한 의견</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>FAQ</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>숙발시설 이용 후기</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>문의</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec7-sub">
+                <div class="sec7-btn">
+                    <button class="sec7-title1" id="d-a" onclick="sec7_4_1()">
+                        <div><i class="fas fa-chevron-down"></i> 공급업체, 제휴사, 미디어 해당 섹션</div>
+                    </button>
+                    <button class="sec7-title2" id="d-b" onclick="sec7_4_2()">
+                        <div><i class="fas fa-chevron-up"></i> 공급업체, 제휴사, 미디어 해당 섹션</div>
+                    </button>
+                </div>
+                <div class="sec7-info" id="four">
+
+                    <div>
+                        <a href="sub.html">
+                            <div>제휴 프로그램 참여</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>여행사</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>광고 제휴</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec7-sub">
+                <div class="sec7-btn">
+                    <button class="sec7-title1" id="e-a" onclick="sec7_5_1()">
+                        <div><i class="fas fa-chevron-down"></i> 이용약관 및 개인정보 보호</div>
+                    </button>
+                    <button class="sec7-title2" id="e-b" onclick="sec7_5_2()">
+                        <div><i class="fas fa-chevron-up"></i> 이용약관 및 개인정보 보호</div>
+                    </button>
+                </div>
+                <div class="sec7-info" id="five">
+
+                    <div>
+                        <a href="sub.html">
+                            <div>이용약관</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>쿠키</div>
+                        </a>
+                        <a href="sub.html">
+                            <div>개인정보 보호</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <!-- 리스트 -->
+
+    <!-- 푸터 영역 -->
+
+    <footer>
+
+        <div id="footer-left">
+            <div>© 2021 AirTravel, Inc.<br /></div>
+
+            <div class="footer-info">
+                <a href="sub.html">개인정보 처리방침 </a>
+                <a href="sub.html">· 이용약관 </a>
+                <a href="sub.html">· 사이트맵 </a>
+                <a href="sub.html">· 한국의 변경된 환불 정책 </a>
+                <a href="sub.html">· 회사 세부정보 </a>
+
+            </div>
+        </div>
+
+        <div id="footer-center">
+            <div><i class="fas fa-globe"></i> <span>한국어(KR)</span></div>
+            <div><i class="fas fa-won-sign"></i> <span>KRW</span></div>
+        </div>
+
+        <div id="sns">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+
+    </footer>
+
+    <!-- 푸터 영역 -->
+
+
+</body>
+
+</html>
